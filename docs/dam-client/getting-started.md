@@ -26,21 +26,21 @@ Use the matching candidate instructions for development identity staging and lau
 
 ## Inspect through the CLI
 
-These commands illustrate the inspected foundation CLI. They require an already-built matching candidate and its running agent, a configured connection named \`local\`, and a successful authorized login.
+These commands illustrate the inspected foundation CLI. They require an already-built matching candidate and its running agent, a configured connection named `local`, and a successful authorized login.
 
-\`\`\`powershell
+```powershell
 aem-desktop-bridge status
 aem-desktop-bridge browse --connection local --path /content/dam/evaluation --offset 0 --limit 25
-\`\`\`
+```
 
 The path is an **example**: replace it with your dedicated test subtree. Browse results are paged; follow the next offset rather than treating one page as the whole repository.
 
 For the native folder preview:
 
-\`\`\`powershell
+```powershell
 aem-desktop-bridge mount --connection local --mount-point C:\SambafiedEvaluation
 aem-desktop-bridge root-status --mount-point C:\SambafiedEvaluation
-\`\`\`
+```
 
 The example work folder must be new and empty, on a qualified volume. A fresh native root also needs the agent’s development package identity. Do not use these commands to adopt or repair an existing folder.
 
@@ -54,9 +54,9 @@ Do not use a local save as proof that a remote upload succeeded. Publication and
 
 Stop a root using its exact path:
 
-\`\`\`powershell
+```powershell
 aem-desktop-bridge root-stop --mount-point C:\SambafiedEvaluation
-\`\`\`
+```
 
 Stopping and unregistering are different. Read [the folder lifecycle](folder-workflow.md#stop-and-unregister) before removing a registration. Preserve any local edits and uncertain publication state for review.
 

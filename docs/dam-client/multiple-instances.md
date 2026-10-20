@@ -12,8 +12,8 @@ description: Plan separate work folders for separate AEM instances with Sambafie
 
 | Connection | Author | Work folder |
 | --- | --- | --- |
-| Brand studio | Your studio Author | \`C:\Work\StudioAssets\` |
-| Campaign team | Your campaign Author | \`C:\Work\CampaignAssets\` |
+| Brand studio | Your studio Author | `C:\Work\StudioAssets` |
+| Campaign team | Your campaign Author | `C:\Work\CampaignAssets` |
 
 These names and paths are illustrative. They do not describe a tested deployment or a product screenshot.
 

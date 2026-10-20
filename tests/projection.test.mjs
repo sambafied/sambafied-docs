@@ -1,7 +1,8 @@
 import {test} from 'node:test';
+import {execFileSync} from 'node:child_process';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {mkdtempSync, mkdirSync, writeFileSync, rmSync} from 'node:fs';
+import {mkdtempSync, mkdirSync, readFileSync, writeFileSync, rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {dirname, join, resolve} from 'node:path';
 import {checkProjection} from '../scripts/check-docs-projection.mjs';
@@ -46,4 +47,17 @@ test('unknown generator fails', t => {
   state.generator = 'unapproved';
   writeFileSync(join(root, 'public-docs-source.json'), JSON.stringify(state));
   assert.throws(() => checkProjection(root), /Invalid/);
+});
+
+test('fresh autocrlf checkout preserves generated public bytes', t => {
+  const {root} = fixture(t);
+  writeFileSync(join(root, '.gitattributes'), readFileSync(new URL('../.gitattributes', import.meta.url)));
+  const git = args => execFileSync('git', args, {encoding: 'utf8', stdio: 'pipe'});
+  git(['init', '-q', root]);
+  git(['-C', root, 'add', '.']);
+  git(['-C', root, '-c', 'user.name=Projection Fixture', '-c', 'user.email=fixture@example.invalid', '-c', 'commit.gpgsign=false', 'commit', '-qm', 'projection fixture']);
+  const checkout = join(root, 'checkout');
+  git(['clone', '--no-hardlinks', '--config', 'core.autocrlf=true', root, checkout]);
+  assert.equal(checkProjection(checkout), 1);
+  assert.equal(readFileSync(join(checkout, 'docs/index.md')).includes(Buffer.from('\r\n')), false);
 });

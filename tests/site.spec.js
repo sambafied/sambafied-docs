@@ -89,3 +89,20 @@ test('representative marketing and documentation pages pass automated accessibil
     expect(result.violations, route).toEqual([]);
   }
 });
+
+test('documented CLI commands render as fenced code and connection names as inline code', async ({page}) => {
+  await page.goto('/docs/dam-client/getting-started/');
+  const blocks = page.locator('main pre code');
+  await expect(blocks).toHaveCount(3);
+  await expect(blocks.nth(0)).toContainText('aem-desktop-bridge status');
+  await expect(blocks.nth(0)).toContainText('aem-desktop-bridge browse --connection local');
+  await expect(blocks.nth(1)).toContainText('aem-desktop-bridge mount --connection local');
+  await expect(blocks.nth(1)).toContainText('aem-desktop-bridge root-status');
+  await expect(blocks.nth(2)).toContainText('aem-desktop-bridge root-stop');
+  await expect(page.locator('main p code').filter({hasText: /^local$/})).toHaveCount(1);
+  await page.goto('/docs/dam-client/find-and-open-assets/');
+  await expect(page.locator('main pre code')).toHaveCount(1);
+  await expect(page.locator('main pre code')).toContainText('aem-desktop-bridge browse --connection local');
+  await page.goto('/docs/dam-client/multiple-instances/');
+  await expect(page.locator('main td code').filter({hasText: 'C:\\Work\\StudioAssets'})).toBeVisible();
+});

@@ -1,2 +1,6 @@
 # Preserve original brand SVG formatting; exclude its supplied whitespace from checks.
 static/img/*.svg -whitespace
+
+# Generated public content must match canonical byte hashes on every checkout.
+docs/** text eol=lf
+public-docs-source.json text eol=lf

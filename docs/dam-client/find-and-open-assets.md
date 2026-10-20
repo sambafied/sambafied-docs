@@ -12,9 +12,9 @@ Choose the right connection before you browse or search. A result belongs to an 
 
 The foundation browse command returns a bounded page:
 
-\`\`\`powershell
+```powershell
 aem-desktop-bridge browse --connection local --path /content/dam/evaluation --offset 0 --limit 25
-\`\`\`
+```
 
 The connection and path are examples. Use your configured evaluation subtree. Follow the returned next offset until completion rather than assuming the first page represents the whole folder.
 
