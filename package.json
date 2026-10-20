@@ -1,0 +1,39 @@
+{
+  "name": "sambafied-docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start --host 127.0.0.1",
+    "build": "npm run validate:docs && docusaurus build",
+    "serve": "docusaurus serve --host 127.0.0.1",
+    "test:e2e": "playwright test",
+    "validate:docs": "node scripts/check-docs-projection.mjs",
+    "test:projection": "node --test tests/projection.test.mjs"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@mdx-js/react": "3.1.1",
+    "prism-react-renderer": "2.4.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1"
+  },
+  "engines": {
+    "node": ">=22.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  }
+}
