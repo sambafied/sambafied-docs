@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Getting started
 description: Prepare a bounded local evaluation of the Sambafied DAM Client development preview.
 ---

@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start --host 127.0.0.1",
-    "build": "docusaurus build",
+    "build": "npm run validate:docs && docusaurus build",
     "serve": "docusaurus serve --host 127.0.0.1",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "validate:docs": "node scripts/check-docs-projection.mjs",
+    "test:projection": "node --test tests/projection.test.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",

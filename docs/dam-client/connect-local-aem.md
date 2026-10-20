@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Connect to local AEM
 description: Prepare a local AEM Author connection and a separate native work folder.
 ---

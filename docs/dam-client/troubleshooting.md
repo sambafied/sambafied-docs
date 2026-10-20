@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Troubleshooting
 description: Diagnose bounded preview issues without losing local work or exposing credentials.
 ---

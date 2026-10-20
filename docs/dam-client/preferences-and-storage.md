@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Preferences and storage
 description: Understand connection settings, background lifecycle, work-folder storage and conditional cleanup.
 ---

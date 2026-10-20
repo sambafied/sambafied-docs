@@ -1,4 +1,5 @@
 ---
+publication: public
 title: DAM Client overview
 description: The Sambafied DAM Client vision and the scope of its current development preview.
 ---

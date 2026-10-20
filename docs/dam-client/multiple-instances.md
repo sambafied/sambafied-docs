@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Multiple AEM instances
 description: Plan separate work folders for separate AEM instances with Sambafied DAM Client.
 ---

@@ -1,4 +1,5 @@
 ---
+publication: public
 title: The folder workflow
 description: Understand namespace snapshots, original recall, local changes, and work-folder lifecycle.
 ---

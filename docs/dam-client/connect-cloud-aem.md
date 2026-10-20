@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Connect to AEM Cloud Service
 description: Understand the Cloud Service Author sign-in path and its independent qualification boundary.
 ---

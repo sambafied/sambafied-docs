@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Adobe desktop app context
 description: Compare Adobe’s documented server-switching workflow with Sambafied’s intended concurrent multi-instance folder experience.
 ---

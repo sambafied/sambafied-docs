@@ -1,6 +1,7 @@
 const {defineConfig, devices} = require('@playwright/test');
 module.exports = defineConfig({
   testDir: './tests',
+  testMatch: '**/*.spec.js',
   fullyParallel: true,
   retries: 0,
   workers: 2,

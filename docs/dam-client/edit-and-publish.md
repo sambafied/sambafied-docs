@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Edit and publish
 description: Understand local edits, explicit publication, checkout and the bounded local write path.
 ---

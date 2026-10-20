@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Documentation
 slug: /
 description: Choose a practical path through Sambafied DAM Client evaluation and documentation.

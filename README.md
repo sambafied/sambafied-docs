@@ -24,15 +24,30 @@ The production build fails on broken site/Markdown links. Playwright tests exerc
 ## Structure
 
 - src/pages/: marketing homepage and product page
-- docs/: evaluation and product documentation
+- docs/: GENERATED public projection; edit canonical pages in the private umbrella repository docs/public
 - src/components/: illustrative multi-instance folder diagram
 - src/css/custom.css: responsive brand theme
 - static/img/: unchanged selected assets from the supplied brand packs
 - tests/: production-site browser checks
-- review/: source provenance and validation notes
+- review/screenshots/: public site QA captures; private design/review notes stay in the canonical source
 
 ## Publishing boundary
 
 The canonical URL is configured as https://sambafied.me. This does not publish the site or configure DNS. There is deliberately no deployment workflow, deploy script, or CNAME change. Publication requires separate authority.
 
 No binaries, pricing, support commitments, or production compatibility claims are supplied.
+
+## Canonical authoring source
+
+Public Markdown is authored in sambafied/docs/public. Everything else in the umbrella documentation is private by default and is not recursively copied. The explicit allowlist and publication markers control export.
+
+From the approved umbrella source checkout:
+
+```powershell
+python scripts/export-public-docs.py --destination D:/projects/sambafied/sambafied-docs
+python scripts/export-public-docs.py --destination D:/projects/sambafied/sambafied-docs --check
+```
+
+This site tracks only the generated public pages and public-docs-source.json (source revision + content hashes). npm run validate:docs checks that snapshot; npm run build runs it automatically. npm run test:projection tests drift/private-file rejection. These checks require no private-repository credentials. Source-side --check additionally compares the canonical allowlist and bytes.
+
+Do not manually maintain another copy here. To remove a page, explicitly review/remove its generated file and state entry before running the revised source export; no automatic pruning is performed. No cross-repo workflow or website deployment has been enabled.

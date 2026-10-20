@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "generator": "sambafied-public-docs/v1",
+  "source_revision": "6d89bbf842242fb562af2ed189c1053e9c65f3ae",
+  "files": {
+    "dam-client/adobe-context.md": "3c5353002707b941c49134682e5b76c710874833de84cdfc5937a36d1bb2baa6",
+    "dam-client/conflicts-and-recovery.md": "8a0b80bdb66454f4df8a8aaaf0c01425426a05f860d514e2a4366b6e1d5b66e7",
+    "dam-client/connect-cloud-aem.md": "1cfd8f11bc1095df74577e0aa36c86371c91c168333f9b09df4f6a55d20785fa",
+    "dam-client/connect-local-aem.md": "5d044969f15371eae3476adb444529be07edf5182b982fddff70150f68699c04",
+    "dam-client/edit-and-publish.md": "1c3d31bd24690565782f343fe63f82614430ce8c0b9da4364a62a8d438c7f0d9",
+    "dam-client/find-and-open-assets.md": "a9a4350dd9dff00b6dd698c72f03bd83bf4b69676f749a1cce43f033b4564df4",
+    "dam-client/folder-workflow.md": "7b2a3a91f728d2cea7d67bdbd2dc3413fb0b4abf1fbad4efdb134a4b5657b82b",
+    "dam-client/getting-started.md": "fa490c2bf2f2538cd1e78439a92a4445f3f51521e67ed756dfe7f9aa7604d6a6",
+    "dam-client/multiple-instances.md": "db66b560538528b2dd6d04a78adc21780fd74024dfa6f788e5e3d4503a0d0847",
+    "dam-client/overview.md": "b44af62bbe929076a345c48949d1a6a4888eac8f54fef046c47521b5a7208664",
+    "dam-client/preferences-and-storage.md": "794a69f3d02608a45e798b19d6d54055a3e3179f949ca249fd31d986464e85f1",
+    "dam-client/status.md": "051e1906f70ef2676a8465b194ef63d5fddf399f3ba7b6324da5b77259903afd",
+    "dam-client/troubleshooting.md": "2844d338fd381e59807f5e264d9fd89157a75f98fbf29157d9df321483d01ae9",
+    "index.md": "4511b5d9bb68b7a9672442f52625a0b17b0d082f8b42b5925fe640a5f7c6d598"
+  }
+}

@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Readiness and limits
 description: Distinguish locally observed behavior, implemented primitives and pending Sambafied DAM Client qualification.
 ---

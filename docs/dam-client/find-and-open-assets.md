@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Find and open assets
 description: Browse a scoped AEM namespace, use bounded search, and recall an original through a work folder.
 ---

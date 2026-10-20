@@ -1,4 +1,5 @@
 ---
+publication: public
 title: Conflicts and recovery
 description: Preserve local work and reconcile uncertain outcomes during a Sambafied evaluation.
 ---
