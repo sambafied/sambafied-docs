@@ -1,0 +1,14 @@
+import React from 'react';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import MappingDiagram from '../../components/MappingDiagram';
+
+export default function Product() {
+  return <Layout title="DAM Client" description="A folder-first desktop experience for AEM assets. Understand the Sambafied DAM Client vision, preview and evaluation path.">
+    <main>
+      <section className="container section product-hero"><p className="eyebrow">SAMBAFIED DAM CLIENT · COMING SOON</p><div className="hero-grid"><div><h1>AEM assets.<br/><span className="text-accent">At home on<br/>your desktop.</span></h1><p className="hero-lead">Work from familiar folders. Keep multiple AEM instances available side by side, each in its own folder. Sambafied DAM Client is being built to put the filesystem at the center of your asset workflow.</p><p className="deployment-line">Local AEM + AEM as a Cloud Service</p><div className="actions"><Link className="button button--primary" to="/docs/dam-client/folder-workflow">Explore the workflow</Link><Link className="text-link" to="/docs/dam-client/status">Check readiness →</Link></div></div><MappingDiagram/></div></section>
+      <section className="container section outcome-grid"><article><span className="eyebrow">01 / FAMILIAR</span><h2>Start in your folders.</h2><p>The native folder preview lets you navigate a bounded AEM asset tree in Windows Explorer and recall originals when opened. The wider goal is a natural desktop workflow.</p><Link to="/docs/dam-client/folder-workflow">How folder access works →</Link></article><article><span className="eyebrow">02 / ORGANIZED</span><h2>Give every instance a home.</h2><p>Separate work folders make the intended destination visible. Named connection and mount primitives exist; the complete multi-instance experience still needs qualification.</p><Link to="/docs/dam-client/multiple-instances">Plan instance mappings →</Link></article><article><span className="eyebrow">03 / INFORMED</span><h2>Evaluate with clarity.</h2><p>Local development evidence is distinct from production readiness. See what has been exercised, what is still being built, and what to check before an evaluation.</p><Link to="/docs/dam-client/status">Read the readiness notes →</Link></article></section>
+      <section className="container section"><div className="callout-panel"><p className="eyebrow">COMING SOON</p><h2>A folder-first future, with clear boundaries.</h2><p>The current evidence centers on Windows and a local AEM Author. Production on-premises and AEM as a Cloud Service remain qualification targets. This site does not offer a production installer or a supported compatibility matrix.</p><div className="actions"><Link className="button button--primary" to="/docs/dam-client/getting-started">Plan a future evaluation</Link><Link to="/docs/dam-client/adobe-context">How this relates to Adobe’s desktop app →</Link></div></div></section>
+    </main>
+  </Layout>;
+}

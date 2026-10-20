@@ -1,0 +1,2 @@
+# Preserve original brand SVG formatting; exclude its supplied whitespace from checks.
+static/img/*.svg -whitespace
