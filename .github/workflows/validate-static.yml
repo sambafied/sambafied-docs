@@ -60,4 +60,3 @@ jobs:
               for name, expected in state['files'].items():
                   assert hashlib.sha256((checkout / name).read_bytes()).hexdigest() == expected, name
           print('Verified', len(state['files']), 'compiled files, internal links and fresh autocrlf checkout')
-
