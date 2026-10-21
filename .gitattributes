@@ -1,0 +1,12 @@
+# Compiled site assets are verified byte for byte, including on Windows.
+*.html -text -whitespace
+*.css -text -whitespace
+*.js -text -whitespace
+*.svg -text -whitespace
+*.xml -text -whitespace
+*.txt -text -whitespace
+*.png -text
+*.jpg -text
+*.ico -text
+site-output.json -text
+.github/** text eol=lf
