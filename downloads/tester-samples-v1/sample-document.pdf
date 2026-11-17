@@ -1,0 +1,98 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 8 0 R /MediaBox [ 0 0 595 842 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (Sambafied) /CreationDate (D:20000101000000+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (Sambafied test document - Revision 1) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Length 896
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+.062745 .094118 .156863 rg
+BT /F2 12 Tf 14.4 TL ET
+BT 1 0 0 1 56 776 Tm (SAMBAFIED TEST ASSET) Tj T* ET
+BT /F2 30 Tf 36 TL ET
+BT 1 0 0 1 56 715 Tm (Sample document) Tj T* ET
+0 .490196 .568627 rg
+BT /F2 24 Tf 28.8 TL ET
+BT 1 0 0 1 56 668 Tm (Revision 1) Tj T* ET
+.203922 .25098 .329412 rg
+BT /F1 12 Tf 14.4 TL ET
+BT 1 0 0 1 56 608 Tm (Use this one-page PDF to test upload, download and preview.) Tj T* ET
+BT 1 0 0 1 56 582 Tm (Check that this title and revision remain readable in AEM.) Tj T* ET
+BT 1 0 0 1 56 556 Tm (All content is synthetic and contains no personal information.) Tj T* ET
+0 .490196 .568627 rg
+n 56 330 148 140 re f*
+.694118 .282353 .682353 rg
+n 220 330 148 140 re f*
+.933333 .639216 .211765 rg
+n 384 330 148 140 re f*
+.203922 .25098 .329412 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 56 64 Tm (Sambafied tester samples | Page 1 of 1) Tj T* ET
+ 
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000514 00000 n 
+0000000582 00000 n 
+0000000871 00000 n 
+0000000930 00000 n 
+trailer
+<<
+/ID 
+[<8a9e851f9820eaba8ae104ca24e0e3a0><8a9e851f9820eaba8ae104ca24e0e3a0>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+1876
+%%EOF

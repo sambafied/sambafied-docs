@@ -1,0 +1,6 @@
+SAMBAFIED EDITABLE TEST ASSET
+Revision: 1
+
+This is synthetic content for testing AEM synchronization.
+Open this file in Notepad. Change Revision: 1 to Revision: 2,
+save and close it, then download the original from AEM to verify.
