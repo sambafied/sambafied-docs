@@ -10,3 +10,6 @@
 *.ico -text
 site-output.json -text
 .github/** text eol=lf
+
+# Immutable synthetic tester downloads retain canonical bytes.
+downloads/tester-samples-v1/** -text
