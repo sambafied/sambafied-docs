@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "public_path": "downloads/tester-samples-v1",
+  "files": {
+    "README.txt": "9d69f76248b747a33c61743f8b0a7881ccac57f8969065b622fbcd2fd2ad9e05",
+    "sample-image.png": "a0afa81f410188d6a95bbfc3599373e68caca4d4c6522566fd815b1ef65cab7e",
+    "sample-document.pdf": "599163b4514a43aeea80701cf7910ea30f54d85225cd3f4cb20d84982df988d6",
+    "sample-editable.txt": "21e6fb02609cf5f6ec777ec61d235fd0051d66091548752ba1883b8ae08327ac",
+    "sambafied-tester-samples-v1.zip": "efa9558bf72a5dbbafac3071d64fd2b48f2dbb3b602f59b96a1d73fad8fb3c6f"
+  }
+}
